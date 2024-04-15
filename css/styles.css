@@ -192,6 +192,73 @@ nav .right a span {
   flex: 8;
 }
 
+/* Showcase */
+/* Showcase */
+.showcase-section {
+  padding: 0 50px;
+  margin-bottom: 280px;
+}
+
+.showcase-section h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.showcase-section .text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.showcase-section .cells {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.showcase-section .cells .cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 250px;
+  padding: 20px;
+  margin: 10px;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.showcase-section .cells .cell img {
+  width: 150px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+.showcase-section .cells .cell span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.showcase-section .cells .cell p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.github-btn {
+  padding: 8px 15px;
+  background-color: var(--link-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+  background-color: #555;
+}
+
 /* Contact */
 .contact-section {
   padding: 0 50px;

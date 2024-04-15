@@ -13,7 +13,6 @@
 
   .hero .headIMG img {
     width: 300px;
-    height: 350px;
   }
 
   /* Education */
@@ -65,11 +64,23 @@
   .skills-section .cells .cell span {
     font-size: 16px;
   }
+
   /* Education */
   .education-section {
     padding: 0 20px;
   }
 
+  .education-section .group .text {
+    font-size: 16px;
+  }
+  /* showcase */
+  .showcase-section {
+    padding: 0 20px;
+  }
+
+  .showcase-section .cells .cell span {
+    font-size: 16px;
+  }
   /* Contact */
   .contact-section {
     padding: 0 20px;

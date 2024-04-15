@@ -19,8 +19,12 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/styles.css" defer />
+    <link rel="stylesheet" href="css/media.css" defer />
+
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/script.js" defer></script>
 
     <title>Portfolio</title>
   </head>
@@ -28,12 +32,12 @@
     <!-- NAVBAR -->
     <nav>
       <div class="left">
-        <a href="https://thijsbrandhorst.github.io/ThijsPortfolio/">Thijs Brandhorst</a>
+        <a href="/">Thijs Brandhorst</a>
       </div>
       <div class="right">
         <!--Github-->
         <a
-          href="https://github.com/ThijsB-Github"
+          href="https://github.com/ThijsBrandhorst"
           target="_blank"
           rel="noopener no-referrer"
         >
@@ -63,12 +67,15 @@
         <div class="text">
           <h2>Hoi, ik ben Thijs</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam
-            eius iste ab hic omnis praesentium magnam quis eligendi, architecto
-            molestias nam vero, delectus labore, voluptatibus rerum quia
-            incidunt dolorem id. Hic facere labore quaerat ea! Impedit excepturi
-            quibusdam accusantium modi quam, veniam vero placeat nulla illo
-            provident? Labore, praesentium voluptates!
+            Sinds mijn jeugd heb ik een passie voor software development. Mijn
+            vaardigheden bevatten Java, C#, HTML, CSS, Javascript en SQL. Naast
+            mijn interesse in software ontwikkelen, vind ik het leuk om games te
+            spelen en te creëren in Unity. Ook vind ik het leuk om te karten,
+            verder werk ik in mijn vrije tijd als teamleider bij Jumbo. Mensen
+            omschrijven mij vaak als een enthousiaste en betrokken persoon. Mijn
+            doel is om mijn huidige opleiding tot software developer succesvol
+            af te ronden en vervolgens naar het HBO te gaan waarbij ik mijn
+            kennis kan uitbreiden.
           </p>
 
           <div class="links">
@@ -91,7 +98,6 @@
               <i class="fa-solid fa-envelope"></i>
               <span>Contact</span>
             </a>
-
           </div>
         </div>
 
@@ -104,12 +110,13 @@
       <section id="skills" class="skills-section">
         <h2>Skills</h2>
         <div class="text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-          tempore libero quod provident ratione quaerat explicabo officiis
-          laborum vel sint quibusdam soluta, itaque eligendi tenetur ullam
-          assumenda! Laborum, natus provident?
+          Mijn vaardigheden omvatten het ontwikkelen van applicaties. Ik ben
+          zowel een frontend als een backend developer, Ik kan een
+          gebruikersvriendelijke applicatie maken. Mijn expertise is verdeeld
+          over verschillende programmeertalen en technologieën, waardoor ik in
+          staat ben om veelzijdige oplossingen te leveren voor diverse
+          projecten.
         </div>
-
         <div class="cells">
           <div class="cell">
             <img src="images/html-logo.webp" alt="html logo" />
@@ -154,18 +161,63 @@
           </div>
 
           <div class="text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
-            mollitia praesentium dolores vero deserunt magnam aliquid. Ratione
-            quas doloremque eaque similique rerum, eos beatae veniam maxime at
-            nostrum exercitationem! Nemo obcaecati non magni inventore
-            consequuntur ipsam illum recusandae sed delectus neque. Minima,
-            dolore nobis neque obcaecati doloremque nostrum quas illum.
+            Ik koos deze opleiding omdat ik het leuk vindt om in mijn vrije tijd
+            kleine projecten voor mijzelf te maken. Ik heb altijd interesse
+            gehad in het developen van software, door deze opleiding te volgen
+            kan ik dus mijn hobby tot een beroep maken. Ook werd er door mijn
+            familie en kennissen gezegt dat dit beroep wel bij mij paste.
           </div>
         </div>
       </section>
+
       <!--Showcase-->
       <section id="showcase" class="showcase-section">
+        <h2>Showcase</h2>
 
+        <div class="text">
+          Hieronder is een selectie van mijn projecten die ik heb gemaakt, de
+          projecten laten verschillende vaardigheden zien. Wanneer je naar de
+          Github pagina gaat vergeet niet om de readme te lezen zodat je meer
+          informatie hebt over het project.
+        </div>
+
+        <div class="cells">
+          <div class="cell">
+            <img src="images/galgje-game.webp" alt="gaglje logo" />
+            <span>Galgje</span>
+            <p>Galgje met HTML, JS en CSS</p>
+            <a
+              href="https://github.com/ThijsB-Github/Galgje"
+              class="github-btn"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+
+          <div class="cell">
+            <img src="images/pokemon-logo.webp" alt="pokemon logo" />
+            <span>Pokemon</span>
+            <p>Pokemon game met Java</p>
+            <a
+              href="https://github.com/ThijsB-Github/PokemonGame/tree/master"
+              class="github-btn"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+
+          <div class="cell">
+            <img src="images/cardgame-logo.webp" alt="Cardgame logo" />
+            <span>Cardgame</span>
+            <p>Cardgame met Java</p>
+            <a
+              href="https://github.com/ThijsB-Github/CardGame"
+              class="github-btn"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
+        </div>
       </section>
 
       <!-- Contact -->
@@ -174,26 +226,25 @@
 
         <div class="group">
           <div class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla sit
-            maiores, ut impedit aut deserunt eaque corporis expedita quae sequi
-            magnam corrupti assumenda autem quibusdam vel ex inventore minima
-            modi cumque libero laborum! Earum id dolorum illo a reiciendis
-            praesentium excepturi doloribus optio, est odit voluptates quidem
-            iste perferendis nulla.
+            Heb je nog vragen of wil je meer over mij? Neem dan contact met mij
+            op of vul het onderstaande formulier in zodat ik contact met je kan
+            maken. Verdere feedback is ook zeker welkom!
           </div>
 
-          <form>
+          <form id="contactForm">
             <label for="name">Naam</label>
-            <input type="text" id="name"/>
-
+            <input type="text" id="name" name="from_name" />
+            
+        
             <label for="email">Email</label>
-            <input type="email" id="email"/>
-
+            <input type="email" id="email" name="reply_to" />            
+        
             <label for="message">Bericht</label>
-            <textarea id="message" cols="30" rows="10"></textarea>
-
-            <button type="submit">Verstuur Bericht</button>
-          </form>
+            <textarea id="message" name="message" cols="30" rows="10"></textarea>
+        
+            <button type="submit" id="submitBtn">Verstuur Bericht</button>
+        </form>
+        
         </div>
       </section>
     </main>
