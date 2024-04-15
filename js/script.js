@@ -1,4 +1,6 @@
-emailjs.init("S2NbsUtMtDe4HFHoS");
+import config from './config.js';
+
+emailjs.init(config.emailJsUserId);
 
 document.addEventListener('DOMContentLoaded', function () {
     var form = document.getElementById('contactForm');
@@ -12,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
         };        
         
         // Send form data to EmailJS to trigger email sending
-        emailjs.send('service_8dnwopg', 'template_u0ll8vi', formData)
+        emailjs.send(config.emailJsServiceId, config.emailJsTemplateId, formData)
             .then(function(response) {
                 console.log('Email sent successfully:', response);
                 alert('Your message has been sent successfully!');

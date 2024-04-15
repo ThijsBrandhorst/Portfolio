@@ -22,9 +22,8 @@
     <link rel="stylesheet" href="css/styles.css" defer />
     <link rel="stylesheet" href="css/media.css" defer />
 
-
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="js/script.js" defer></script>
+    <script src="js/script.js" type="module" defer></script>
 
     <title>Portfolio</title>
   </head>
@@ -234,17 +233,20 @@
           <form id="contactForm">
             <label for="name">Naam</label>
             <input type="text" id="name" name="from_name" />
-            
-        
+
             <label for="email">Email</label>
-            <input type="email" id="email" name="reply_to" />            
-        
+            <input type="email" id="email" name="reply_to" />
+
             <label for="message">Bericht</label>
-            <textarea id="message" name="message" cols="30" rows="10"></textarea>
-        
+            <textarea
+              id="message"
+              name="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+
             <button type="submit" id="submitBtn">Verstuur Bericht</button>
-        </form>
-        
+          </form>
         </div>
       </section>
     </main>
