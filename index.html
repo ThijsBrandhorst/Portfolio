@@ -1,254 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/styles.css" defer />
-    <link rel="stylesheet" href="css/media.css" defer />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="js/script.js" type="module" defer></script>
+  <link rel="stylesheet" href="css/styles.css" defer />
+  <link rel="stylesheet" href="css/media.css" defer />
 
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <!-- NAVBAR -->
-    <nav>
-      <div class="left">
-        <a href="/">Thijs Brandhorst</a>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="js/script.js" type="module" defer></script>
+
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Thijs Brandhorst</a>
+    </div>
+    <div class="right">
+      <!--Github-->
+      <a href="https://github.com/ThijsBrandhorst" target="_blank" rel="noopener no-referrer">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+      <!--Linkedin-->
+      <a href="https://www.linkedin.com/in/thijs-brandhorst/" target="_blank" rel="noopener no-referrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      <!--CV-->
+      <a href="Files/ThijsBrandhorstCV.pdf" target="_blank" rel="noopener no-referrer">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span>CV</span>
+      </a>
+      <!--Email-->
+      <a href="mailto:thijsbrandhorst007@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="text">
+        <h2>Hoi, ik ben Thijs</h2>
+        <p>
+          Sinds mijn jeugd heb ik een passie voor software development. Mijn
+          vaardigheden bevatten Java, C#, HTML, CSS, Javascript en SQL. Naast
+          mijn interesse in software ontwikkelen, vind ik het leuk om games te
+          spelen en te creëren in Unity. Ook vind ik het leuk om te karten,
+          verder werk ik in mijn vrije tijd als teamleider bij Jumbo. Mensen
+          omschrijven mij vaak als een enthousiaste en betrokken persoon. Mijn
+          doel is om mijn huidige opleiding tot software developer succesvol
+          af te ronden en vervolgens naar het HBO te gaan waarbij ik mijn
+          kennis kan uitbreiden.
+        </p>
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+
+          <a href="#education">
+            <i class="fa-solid fa-school"></i>
+            <span>Educatie</span>
+          </a>
+
+          <a href="#showcase">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Showcase</span>
+          </a>
+
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
       </div>
-      <div class="right">
-        <!--Github-->
-        <a
-          href="https://github.com/ThijsBrandhorst"
-          target="_blank"
-          rel="noopener no-referrer"
-        >
-          <i class="fa-brands fa-github"></i>
-          <span>GitHub</span>
-        </a>
-        <!--Linkedin-->
-        <a
-          href="https://www.linkedin.com/in/thijs-brandhorst/"
-          target="_blank"
-          rel="noopener no-referrer"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-          <span>Linkedin</span>
-        </a>
-        <!--Email-->
-        <a href="mailto:thijsbrandhorst007@gmail.com">
-          <i class="fa-solid fa-envelope"></i>
-          <span>Email</span>
-        </a>
+
+      <div class="headIMG">
+        <img src="images/headphoto.webp" alt="Thijs Brandhorst head" />
       </div>
-    </nav>
+    </section>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero">
+    <!-- SKILLS -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text">
+        Mijn vaardigheden omvatten het ontwikkelen van applicaties. Ik ben
+        zowel een frontend als een backend developer, Ik kan een
+        gebruikersvriendelijke applicatie maken. Mijn expertise is verdeeld
+        over verschillende programmeertalen en technologieën, waardoor ik in
+        staat ben om veelzijdige oplossingen te leveren voor diverse
+        projecten.
+      </div>
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo" />
+          <span>HTML</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo" />
+          <span>CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo" />
+          <span>JavaScript</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="node logo" />
+          <span>Node.js</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/java-logo.webp" alt="java logo" />
+          <span>Java</span>
+        </div>
+        <div class="cell">
+          <img src="images/cSharp-logo.webp" alt="c# logo" />
+          <span>C#</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="education-section">
+      <h2>Educatie</h2>
+      <div class="group">
+        <div class="school-details">
+          <img src="images/scalda-logo.webp" alt="" />
+          <p>Scalda mbo</p>
+          <p>Software developer</p>
+        </div>
         <div class="text">
-          <h2>Hoi, ik ben Thijs</h2>
-          <p>
-            Sinds mijn jeugd heb ik een passie voor software development. Mijn
-            vaardigheden bevatten Java, C#, HTML, CSS, Javascript en SQL. Naast
-            mijn interesse in software ontwikkelen, vind ik het leuk om games te
-            spelen en te creëren in Unity. Ook vind ik het leuk om te karten,
-            verder werk ik in mijn vrije tijd als teamleider bij Jumbo. Mensen
-            omschrijven mij vaak als een enthousiaste en betrokken persoon. Mijn
-            doel is om mijn huidige opleiding tot software developer succesvol
-            af te ronden en vervolgens naar het HBO te gaan waarbij ik mijn
-            kennis kan uitbreiden.
-          </p>
+          Ik koos deze opleiding omdat ik het leuk vindt om in mijn vrije tijd kleine projecten voor mijzelf te maken.
+          Ik heb altijd interesse gehad in het developen van software, door deze opleiding te volgen kan ik dus mijn
+          hobby tot een beroep maken. Ook werd er door mijn familie en kennissen gezegt dat dit beroep wel bij mij
+          paste.
+        </div>
+      </div>
+    </section>
 
-          <div class="links">
-            <a href="#skills">
-              <i class="fa-solid fa-code"></i>
-              <span>Skills</span>
-            </a>
+    <!--Showcase-->
+    <section id="showcase" class="showcase-section">
+      <h2>Showcase</h2>
 
-            <a href="#education">
-              <i class="fa-solid fa-school"></i>
-              <span>Educatie</span>
-            </a>
+      <div class="text">
+        Hieronder is een selectie van mijn projecten die ik heb gemaakt, de
+        projecten laten verschillende vaardigheden zien. Wanneer je naar de
+        Github pagina gaat vergeet niet om de readme te lezen zodat je meer
+        informatie hebt over het project.
+      </div>
 
-            <a href="#showcase">
-              <i class="fa-solid fa-briefcase"></i>
-              <span>Showcase</span>
-            </a>
-
-            <a href="#contact">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Contact</span>
-            </a>
-          </div>
+      <div class="cells">
+        <div class="cell">
+          <img src="images/galgje-game.webp" alt="gaglje logo" />
+          <span>Galgje</span>
+          <p>Galgje met HTML, JS en CSS</p>
+          <a href="https://github.com/ThijsBrandhorst/Galgje" class="github-btn" target="_blank">GitHub</a>
         </div>
 
-        <div class="headIMG">
-          <img src="images/headphoto.webp" alt="Thijs Brandhorst head" />
+        <div class="cell">
+          <img src="images/pokemon-logo.webp" alt="pokemon logo" />
+          <span>Pokemon</span>
+          <p>Pokemon game met Java</p>
+          <a href="https://github.com/ThijsBrandhorst/PokemonGame/tree/master" class="github-btn"
+            target="_blank">GitHub</a>
         </div>
-      </section>
 
-      <!-- SKILLS -->
-      <section id="skills" class="skills-section">
-        <h2>Skills</h2>
+        <div class="cell">
+          <img src="images/cardgame-logo.webp" alt="Cardgame logo" />
+          <span>Cardgame</span>
+          <p>Cardgame met Java</p>
+          <a href="https://github.com/ThijsBrandhorst/CardGame" class="github-btn" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
         <div class="text">
-          Mijn vaardigheden omvatten het ontwikkelen van applicaties. Ik ben
-          zowel een frontend als een backend developer, Ik kan een
-          gebruikersvriendelijke applicatie maken. Mijn expertise is verdeeld
-          over verschillende programmeertalen en technologieën, waardoor ik in
-          staat ben om veelzijdige oplossingen te leveren voor diverse
-          projecten.
-        </div>
-        <div class="cells">
-          <div class="cell">
-            <img src="images/html-logo.webp" alt="html logo" />
-            <span>HTML</span>
-          </div>
-
-          <div class="cell">
-            <img src="images/css-logo.webp" alt="css logo" />
-            <span>CSS</span>
-          </div>
-
-          <div class="cell">
-            <img src="images/javascript-logo.webp" alt="javascript logo" />
-            <span>JavaScript</span>
-          </div>
-
-          <div class="cell">
-            <img src="images/node-logo.webp" alt="node logo" />
-            <span>Node.js</span>
-          </div>
-
-          <div class="cell">
-            <img src="images/java-logo.webp" alt="java logo" />
-            <span>Java</span>
-          </div>
-          <div class="cell">
-            <img src="images/cSharp-logo.webp" alt="c# logo" />
-            <span>C#</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Education -->
-      <section id="education" class="education-section">
-        <h2>Educatie</h2>
-
-        <div class="group">
-          <div class="school-details">
-            <img src="images/scalda-logo.webp" alt="" />
-            <p>Scalda mbo</p>
-            <p>Software developer</p>
-          </div>
-
-          <div class="text">
-            Ik koos deze opleiding omdat ik het leuk vindt om in mijn vrije tijd
-            kleine projecten voor mijzelf te maken. Ik heb altijd interesse
-            gehad in het developen van software, door deze opleiding te volgen
-            kan ik dus mijn hobby tot een beroep maken. Ook werd er door mijn
-            familie en kennissen gezegt dat dit beroep wel bij mij paste.
-          </div>
-        </div>
-      </section>
-
-      <!--Showcase-->
-      <section id="showcase" class="showcase-section">
-        <h2>Showcase</h2>
-
-        <div class="text">
-          Hieronder is een selectie van mijn projecten die ik heb gemaakt, de
-          projecten laten verschillende vaardigheden zien. Wanneer je naar de
-          Github pagina gaat vergeet niet om de readme te lezen zodat je meer
-          informatie hebt over het project.
+          Heb je nog vragen of wil je meer over mij? Neem dan contact met mij
+          op of vul het onderstaande formulier in zodat ik contact met je kan
+          maken. Verdere feedback is ook zeker welkom!
         </div>
 
-        <div class="cells">
-          <div class="cell">
-            <img src="images/galgje-game.webp" alt="gaglje logo" />
-            <span>Galgje</span>
-            <p>Galgje met HTML, JS en CSS</p>
-            <a
-              href="https://github.com/ThijsBrandhorst/Galgje"
-              class="github-btn"
-              target="_blank"
-              >GitHub</a
-            >
-          </div>
+        <form id="contactForm">
+          <label for="name">Naam</label>
+          <input type="text" id="name" name="from_name" />
 
-          <div class="cell">
-            <img src="images/pokemon-logo.webp" alt="pokemon logo" />
-            <span>Pokemon</span>
-            <p>Pokemon game met Java</p>
-            <a
-              href="https://github.com/ThijsBrandhorst/PokemonGame/tree/master"
-              class="github-btn"
-              target="_blank"
-              >GitHub</a
-            >
-          </div>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="reply_to" />
 
-          <div class="cell">
-            <img src="images/cardgame-logo.webp" alt="Cardgame logo" />
-            <span>Cardgame</span>
-            <p>Cardgame met Java</p>
-            <a
-              href="https://github.com/ThijsBrandhorst/CardGame"
-              class="github-btn"
-              target="_blank"
-              >GitHub</a
-            >
-          </div>
-        </div>
-      </section>
+          <label for="message">Bericht</label>
+          <textarea id="message" name="message" cols="30" rows="10"></textarea>
 
-      <!-- Contact -->
-      <section id="contact" class="contact-section">
-        <h2>Contact</h2>
+          <button type="submit" id="submitBtn">Verstuur Bericht</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
 
-        <div class="group">
-          <div class="text">
-            Heb je nog vragen of wil je meer over mij? Neem dan contact met mij
-            op of vul het onderstaande formulier in zodat ik contact met je kan
-            maken. Verdere feedback is ook zeker welkom!
-          </div>
-
-          <form id="contactForm">
-            <label for="name">Naam</label>
-            <input type="text" id="name" name="from_name" />
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="reply_to" />
-
-            <label for="message">Bericht</label>
-            <textarea
-              id="message"
-              name="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-
-            <button type="submit" id="submitBtn">Verstuur Bericht</button>
-          </form>
-        </div>
-      </section>
-    </main>
-  </body>
 </html>
