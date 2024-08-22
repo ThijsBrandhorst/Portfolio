@@ -193,7 +193,6 @@ nav .right a span {
 }
 
 /* Showcase */
-/* Showcase */
 .showcase-section {
   padding: 0 50px;
   margin-bottom: 280px;
@@ -312,7 +311,6 @@ nav .right a span {
   filter: brightness(.9);
 }
 
-/* Animations */
 .skills-section, .education-section, .showcase-section, .contact-section {
   animation: fadeInUp 1.2s ease-in-out;
 }
