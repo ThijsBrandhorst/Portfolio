@@ -1,4 +1,5 @@
 @media (max-width: 850px) {
+
   /* Hero */
   .hero .text h2 {
     font-size: 35px;
@@ -6,6 +7,7 @@
 }
 
 @media (max-width: 750px) {
+
   /* Hero */
   .hero {
     flex-direction: column-reverse;
@@ -31,6 +33,7 @@
 }
 
 @media (max-width: 689px) {
+
   /* Navbar */
   nav {
     padding: 0 20px;
@@ -54,9 +57,11 @@
   .hero {
     padding: 0 20px;
   }
+
   .hero .text h2 {
     font-size: 30px;
   }
+
   /* Skills */
   .skills-section {
     padding: 0 20px;
@@ -74,6 +79,7 @@
   .education-section .group .text {
     font-size: 16px;
   }
+
   /* showcase */
   .showcase-section {
     padding: 0 20px;
@@ -82,6 +88,7 @@
   .showcase-section .cells .cell span {
     font-size: 16px;
   }
+
   /* Contact */
   .contact-section {
     padding: 0 20px;

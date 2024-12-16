@@ -2,25 +2,34 @@
 <html lang="en">
 
 <head>
+  <!-- Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Thijs Brandhorst - Software Developer Portfolio. Skilled in Java, C#, HTML, CSS, JavaScript, and SQL.">
+  <meta name="keywords" content="Portfolio, Software Developer, Thijs Brandhorst, Java, C#, HTML, CSS, SQL">
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link rel="stylesheet" href="css/styles.css" defer />
-  <link rel="stylesheet" href="css/media.css" defer />
+  <!-- Global -->
+  <link rel="stylesheet" href="css/scrollbar.css">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/media.css" />
 
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script src="js/env.js" defer></script>
-  <script src="js/script.js" type="module" defer></script>
+  <!-- Sections -->
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/skills.css" />
+  <link rel="stylesheet" href="css/education.css" />
+  <link rel="stylesheet" href="css/showcase.css" />
 
   <title>Portfolio</title>
+  <link rel="icon" type="image/png" href="images/portfolio-logo.png">
 </head>
 
 <body>
@@ -30,30 +39,30 @@
       <a href="/">Thijs Brandhorst</a>
     </div>
     <div class="right">
-        <!--Github-->
-        <a href="https://github.com/ThijsBrandhorst" target="_blank" rel="noopener no-referrer">
-          <i class="fa-brands fa-github"></i>
-          <span>GitHub</span>
-        </a>
-        <!--Linkedin-->
-        <a href="https://www.linkedin.com/in/thijs-brandhorst/" target="_blank" rel="noopener no-referrer">
-          <i class="fa-brands fa-linkedin"></i>
-          <span>Linkedin</span>
-        </a>
-        <!--CV-->
-        <a href="Files/ThijsBrandhorstCV.pdf" target="_blank" rel="noopener no-referrer">
-          <i class="fa-solid fa-file-pdf"></i>
-          <span>CV</span>
-        </a>
-        <!--Email-->
-        <a href="mailto:thijsbrandhorst007@gmail.com">
-          <i class="fa-solid fa-envelope"></i>
-          <span>Email</span>
-        </a>
-      </div>
+      <!--Github-->
+      <a href="https://github.com/ThijsBrandhorst" target="_blank" rel="noopener no-referrer">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+      <!--Linkedin-->
+      <a href="https://www.linkedin.com/in/thijs-brandhorst/" target="_blank" rel="noopener no-referrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      <!--CV-->
+      <a href="Files/ThijsBrandhorstCV.pdf" target="_blank" rel="noopener no-referrer">
+        <i class="fa-solid fa-file-pdf"></i>
+        <span>CV</span>
+      </a>
+      <!--Email-->
+      <a href="mailto:thijsbrandhorst007@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
     </div>
   </nav>
-  
+
   <main>
     <!-- HERO -->
     <section class="hero">
@@ -61,13 +70,13 @@
         <h2>Hoi, ik ben Thijs</h2>
         <p>
           Sinds mijn jeugd heb ik een passie voor software development. Mijn
-          vaardigheden bevatten Java, C#, HTML, CSS, Javascript en SQL. Naast
+          vaardigheden bevatten Java, C#, HTML, CSS, Javascript, Typescript en SQL. Naast
           mijn interesse in software ontwikkelen, vind ik het leuk om games te
-          spelen en te creëren in Unity. Ook vind ik het leuk om te karten,
-          verder werk ik in mijn vrije tijd als teamleider bij Jumbo. Mensen
-          omschrijven mij vaak als een enthousiaste en betrokken persoon. Mijn
-          doel is om mijn huidige opleiding tot software developer succesvol
-          af te ronden en vervolgens naar het HBO te gaan waarbij ik mijn
+          spelen, te karten en daarnaast speel ik nog elektrische gitaar. Verder werk ik in mijn vrije tijd als
+          teamleider bij Jumbo.
+          Mensen omschrijven mij vaak als een enthousiaste en betrokken persoon. Mijn
+          doel is om mijn huidige opleiding tot software developer af
+          te ronden en vervolgens naar het HBO te gaan waar ik mijn
           kennis kan uitbreiden.
         </p>
 
@@ -82,20 +91,15 @@
             <span>Educatie</span>
           </a>
 
-          <a href="#showcase">
+          <a href="#showcaseHeader">
             <i class="fa-solid fa-briefcase"></i>
             <span>Showcase</span>
-          </a>
-
-          <a href="#contact">
-            <i class="fa-solid fa-envelope"></i>
-            <span>Contact</span>
           </a>
         </div>
       </div>
 
       <div class="headIMG">
-        <img src="images/headphoto.webp" alt="Thijs Brandhorst head" />
+        <img src="images/headphoto.png" alt="Thijs Brandhorst head" />
       </div>
     </section>
 
@@ -112,27 +116,32 @@
       </div>
       <div class="cells">
         <div class="cell">
-          <img src="images/html-logo.webp" alt="html logo" />
-          <span>HTML</span>
-        </div>
-
-        <div class="cell">
-          <img src="images/css-logo.webp" alt="css logo" />
-          <span>CSS</span>
-        </div>
-
-        <div class="cell">
-          <img src="images/javascript-logo.webp" alt="javascript logo" />
-          <span>JavaScript</span>
-        </div>
-
-        <div class="cell">
-          <img src="images/java-logo.webp" alt="java logo" />
+          <img src="images/java-logo.png" alt="skill 1" />
           <span>Java</span>
         </div>
         <div class="cell">
-          <img src="images/cSharp-logo.webp" alt="c# logo" />
+          <img src="images/cSharp-logo.png" alt="skill 2" />
           <span>C#</span>
+        </div>
+        <div class="cell">
+          <img src="images/javascript-logo.png" alt="skill 3" />
+          <span>JavaScript</span>
+        </div>
+        <div class="cell">
+          <img src="images/typescript-logo.png" alt="skill 4" />
+          <span>TypeScript</span>
+        </div>
+        <div class="cell">
+          <img src="images/mysql-logo.png" alt="skill 5" />
+          <span>SQL</span>
+        </div>
+        <div class="cell">
+          <img src="images/html-logo.png" alt="skill 6" />
+          <span>HTML</span>
+        </div>
+        <div class="cell">
+          <img src="images/css-logo.png" alt="skill 7" />
+          <span>CSS</span>
         </div>
       </div>
     </section>
@@ -142,63 +151,105 @@
       <h2>Educatie</h2>
       <div class="group">
         <div class="school-details">
-          <img src="images/scalda-logo.webp" alt="" />
-          <p>Scalda mbo</p>
+          <img src="images/scalda-logo.png" alt="" />
+          <p>Scalda MBO</p>
           <p>Software developer</p>
         </div>
         <div class="text">
-          Ik koos deze opleiding omdat ik het leuk vindt om in mijn vrije tijd kleine projecten voor mijzelf te maken.
-          Ik heb altijd interesse gehad in het developen van software, door deze opleiding te volgen kan ik dus mijn
-          hobby tot een beroep maken. Ook werd er door mijn familie en kennissen gezegt dat dit beroep wel bij mij
-          paste.
+          Ik heb voor deze opleiding gekozen omdat ik graag met computers werk. Daardoor groeide mijn interesse in
+          softwareontwikkeling. Ik vind het uitdagend en leuk om verschillende problemen op te lossen en een applicatie
+          stap voor stap te zien groeien. Dankzij deze studie kan ik van mijn passie mijn beroep maken en mezelf verder
+          ontwikkelen in dit vakgebied.
         </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="timeline-section">
+      <h2>Opleidingen</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Middelbare School</h3>
+          <p>2019 - 2024</p>
+          <p>Calvijn College - VMBO</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Middelbaar beroepsonderwijs (MBO)</h3>
+          <p>2023 - heden</p>
+          <p>Scalda - Software Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showcase-->
+    <h2 id="showcaseHeader">Showcase</h2>
+
+    <!-- Carousel -->
+    <section id="carousel" class="carousel-section">
+      <h3>Featured Projects: </h3>
+      <div class="carousel">
+        <div class="carousel-track">
+          <div class="carousel-item active">
+            <img src="images/spandon-logo.png" alt="Project 1">
+            <div class="carousel-text">
+              <p>Spandon is een applicatie die het beheer van badmintonracket-bestellingen optimaliseert.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/mealMadness-logo.png" alt="Project 2">
+            <div class="carousel-text">
+              <p>Meal Madness is een uitdagend kookspel geïnspireerd door Overcooked.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/cardgame-logo.png" alt="Project 3">
+            <div class="carousel-text">
+              <p>Een spannend kaartspel waarbij je moet raden of de volgende kaart hoger of lager is.</p>
+            </div>
+          </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+      <div class="carousel-indicators">
+        <span data-slide="0" class="dot active"></span>
+        <span data-slide="1" class="dot"></span>
+        <span data-slide="2" class="dot"></span>
       </div>
     </section>
 
     <!--Showcase-->
     <section id="showcase" class="showcase-section">
-      <h2>Showcase</h2>
-
-      <div class="text">
-        Hieronder is een selectie van mijn projecten die ik heb gemaakt, de
-        projecten laten verschillende vaardigheden zien. Wanneer je naar de
-        Github pagina gaat vergeet niet om de readme te lezen zodat je meer
-        informatie hebt over het project.
-      </div>
-
+      <h3>Meer projecten:</h3>
       <div class="cells">
         <div class="cell">
-          <img src="images/galgje-game.webp" alt="gaglje logo" />
-          <span>Galgje</span>
-          <p>Galgje met HTML, JS en CSS</p>
-          <a href="https://github.com/ThijsBrandhorst/Galgje" class="github-btn" target="_blank">GitHub</a>
+          <img src="images/spandon-logo.png" alt="project 1" />
+          <span>Spandon</span>
+          <a href="https://spandon.delphinity.nl/spandon/registreren" class="github-btn" target="_blank">Bekijken</a>
         </div>
 
         <div class="cell">
-          <img src="images/pokemon-logo.webp" alt="pokemon logo" />
-          <span>Pokemon</span>
-          <p>Pokemon game met Java</p>
-          <a href="https://github.com/ThijsBrandhorst/PokemonGame/tree/master" class="github-btn"
-            target="_blank">GitHub</a>
-        </div>
-
-        <div class="cell">
-          <img src="images/cardgame-logo.webp" alt="Cardgame logo" />
-          <span>Cardgame</span>
-          <p>Card game met Java</p>
-          <a href="https://github.com/ThijsBrandhorst/WesternCardGame" class="github-btn" target="_blank">GitHub</a>
-        </div>
-
-        <div class="cell">
-          <img src="images/mealMadness-logo.webp" alt="Meal Madness logo" />
+          <img src="images/mealMadness-logo.png" alt="project 4" />
           <span>Meal Madness</span>
-          <p>Cooking game met C#</p>
-          <a href="https://github.com/ThijsBrandhorst/Meal-Madness" class="github-btn" target="_blank">GitHub</a>
+          <a href="https://github.com/ThijsBrandhorst/Meal-Madness" class="github-btn" target="_blank">Bekijken</a>
         </div>
 
+        <div class="cell">
+          <img src="images/cardgame-logo.png" alt="project 3" />
+          <span>Kaartspel</span>
+          <a href="https://github.com/ThijsBrandhorst/WesternCardGame" class="github-btn" target="_blank">Bekijken</a>
+        </div>
+
+        <div class="cell">
+          <img src="images/pokemon-logo.png" alt="project 2" />
+          <span>Pokémon game</span>
+          <a href="https://github.com/ThijsBrandhorst/PokemonGame/tree/master" class="github-btn"
+            target="_blank">Bekijken</a>
+        </div>
       </div>
     </section>
   </main>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

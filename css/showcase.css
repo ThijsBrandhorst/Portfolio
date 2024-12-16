@@ -1,0 +1,156 @@
+  /* Showcase general */
+  #showcaseHeader {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  /* Carousel */
+  .carousel {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .carousel-section h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .carousel-item {
+    flex: 0 0 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+  }
+
+  button.prev,
+  button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 50%;
+  }
+
+  button.prev:hover,
+  button.next:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  button.prev {
+    left: 10px;
+  }
+
+  button.next {
+    right: 10px;
+  }
+
+  .carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .carousel-indicators .dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    background: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .carousel-indicators .dot.active {
+    background: #007bff;
+  }
+
+  /* Showcase */
+  .showcase-section {
+    padding: 0 50px;
+    margin-top: 100px;
+    margin-bottom: 280px;
+  }
+
+  .showcase-section h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  .showcase-section .text {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .showcase-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .showcase-section .cells .cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .showcase-section .cells .cell img {
+    width: 150px;
+    height: 70px;
+    object-fit: contain;
+    border-radius: 2px;
+  }
+
+  .showcase-section .cells .cell span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .showcase-section .cells .cell p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .github-btn {
+    padding: 8px 15px;
+    background-color: var(--link-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  .github-btn:hover {
+    background-color: #555;
+  }
+  
